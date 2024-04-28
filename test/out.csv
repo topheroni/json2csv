@@ -1,0 +1,2 @@
+first_name,last_name,address.street1,address.street2,address.city,address.state,address.zip,phone_number.country_code,phone_number.number
+John,Smith,123 Main St,Unit 101,Miami,Florida,33101,1,305-555-1234
