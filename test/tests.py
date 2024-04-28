@@ -1,6 +1,12 @@
 import json
+import pathlib
 import unittest
 from typing import Any
+
+CWD = pathlib.Path(__file__).resolve().parent
+with open(f"{CWD}/test_input.json", "r") as f:
+    d_f = json.load(f)
+print(CWD)
 
 
 def headers(d: dict[str, Any]):
@@ -10,10 +16,6 @@ def headers(d: dict[str, Any]):
         if isinstance(v, dict):
             h.extend(headers(v))
     return h
-
-
-with open("test_input.json", "r") as f:
-    d_f = json.load(f)
 
 
 class ConversionTest(unittest.TestCase):

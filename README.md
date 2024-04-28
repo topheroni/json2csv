@@ -7,6 +7,6 @@ Clone the repo, `cd` to the newly created directory, and run the following comma
 python json2csv path/to/input.json path/to/output.csv
 ```
 ### Planned features/changes
-- [ ] customize separator
+- [x] customize separator
 - [ ] package installer (pip, setup.py, etc.)
 - [ ] customize casing of headers
