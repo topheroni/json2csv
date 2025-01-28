@@ -8,9 +8,9 @@ MAX_DEPTH = 5
 
 
 def main(args: argparse.Namespace):
-    json_file = args[0]
-    csv_file = args[1]
-    sep = args[2]
+    json_file = args.json_file
+    csv_file = args.csv_file
+    sep = args.sep
     with open(json_file, "r") as f_json:
         data_json = json.load(f_json)
     if isinstance(data_json, list):
